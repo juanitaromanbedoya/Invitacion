@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis 15 Años - Lupe</title>
+
+    <link rel="stylesheet" href="./estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Parisienne&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- PANTALLA LIBRO -->
+
+    <div id="pantalla-libro" class="libro-contenedor">
+
+        <!-- FONDO -->
+
+        <div class="fondo-libro"></div>
+
+        <div class="libro">
+
+            <!-- HOJAS -->
+
+            <div class="hoja hoja1"></div>
+            <div class="hoja hoja2"></div>
+            <div class="hoja hoja3"></div>
+
+            <!-- PORTADA -->
+
+            <div class="portada">
+
+                <!-- CAMBIA ESTA IMAGEN -->
+
+                <img
+                src="img/libro.JPG"
+                class="img-portada">
+
+                <div class="contenido-portada">
+
+                    <button id="btn-abrir">
+                        Abrir Libro
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div id="contenido-invitacion" class="invitacion-oculta">
+
+        <div class="fondo-estatico"></div>
+
+        <!-- RETABLO -->
+
+        <section class="seccion retablo">
+
+            <div class="marco-retablo">
+
+                <img
+                src="img/DSC_0619.JPG"
+                alt="Lupe XV"
+                class="foto-principal">
+
+            </div>
+
+            <h2 class="titulo-xv">
+                Lupe XV años
+            </h2>
+
+        </section>
+
+        <!-- MENSAJE CON IMAGEN -->
+
+        <section class="seccion mensaje-imagen">
+
+            <div class="contenedor-mensaje-imagen">
+
+                <!-- CAMBIA ESTA IMAGEN -->
+
+                <img
+                src="LINK_DE_TU_IMAGEN_MENSAJE"
+                class="imagen-mensaje">
+
+                <div class="texto-sobre-imagen">
+
+                    “Cada sueño comienza con una ilusión,
+                    y hoy quiero compartir contigo
+                    uno de los momentos más especiales de mi vida.”
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CUENTA -->
+
+        <section class="seccion cuenta-regresiva">
+
+            <h3>Falta muy poco...</h3>
+
+            <div class="fecha-evento">
+                19 de Julio, 2026
+            </div>
+
+            <div id="reloj" class="reloj-contenedor">
+
+                <div class="tiempo-bloque">
+                    <span id="dias">00</span>
+                    <p>Días</p>
+                </div>
+
+                <div class="tiempo-bloque">
+                    <span id="horas">00</span>
+                    <p>Horas</p>
+                </div>
+
+                <div class="tiempo-bloque">
+                    <span id="minutos">00</span>
+                    <p>Min.</p>
+                </div>
+
+                <div class="tiempo-bloque">
+                    <span id="segundos">00</span>
+                    <p>Seg.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- GALERÍA -->
+
+        <section class="seccion galeria">
+
+            <h3>Mi Galería</h3>
+
+            <div class="galeria-grid">
+
+                <div class="foto-item">
+                    <img src="img/DSC_0635.JPG" alt="">
+                </div>
+
+                <div class="foto-item">
+                    <img src="img/DSC_0637.JPG" alt="">
+                </div>
+
+                <div class="foto-item">
+                    <img src="img/DSC_0679.JPG" alt="">
+                </div>
+
+                <div class="foto-item">
+                    <img src="img/DSC_0608.JPG" alt="">
+                </div>
+
+                <div class="foto-item">
+                    <img src="img/DSC_0595.JPG" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- UBICACIÓN -->
+
+        <section class="seccion ubicacion">
+
+            <h3>¿Dónde y Cuándo?</h3>
+
+            <div class="info-caja">
+
+                <p><strong>Hora:</strong> 7:00 PM</p>
+
+                <p><strong>Lugar:</strong> Salón de Eventos "Gran Palacio"</p>
+
+                <p>Dirección Ficticia de Ejemplo #123</p>
+
+                <a href="https://www.google.com/maps/place/EVENTOS+CASA+PRADO/@6.2609553,-75.5634248,17z/data=!3m1!4b1!4m6!3m5!1s0x8e442950df76a5bf:0xeaf05c7d83e51453!8m2!3d6.2609553!4d-75.5608499!16s%2Fg%2F11h6g3phkh?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="btn-enlace">
+
+                    Ver Ubicación en Maps 📍
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- VESTIMENTA -->
+
+        <section class="seccion vestimenta">
+
+            <h3>Código de Vestimenta</h3>
+
+            <div class="caja-vestimenta">
+
+                <p>
+                    ✨ <strong>Formal / Elegante</strong> ✨
+                </p>
+
+                <p>
+                    Nota:
+                    Reservado el color
+                    [Color de tu vestido]
+                    para la quinceañera.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- AGRADECIMIENTO -->
+
+        <section class="seccion agradecimiento">
+
+            <p class="gracias-texto">
+                ¡Gracias por formar parte de mi historia!
+            </p>
+
+            <p>
+                Te espero en este momento tan importante para mí.
+                Tu presencia es mi mejor regalo.
+            </p>
+
+        </section>
+
+    </div>
+
+    <script src="./animacion.js"></script>
+
+</body>
+</html>
