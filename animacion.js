@@ -11,12 +11,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* ABRIR LIBRO */
 
-    btnAbrir.addEventListener("click", () => {
+btnAbrir.addEventListener("click", () => {
 
-        document
-        .querySelector(".libro")
-        .classList
-        .add("libro-abierto");
+        const libro =
+        document.querySelector(".libro");
+
+        libro.classList.add("libro-abierto");
+
+        /* ---- MÚSICA ---- */
+        /* PEGA AQUÍ TU ID DE YOUTUBE   */
+        /* Ejemplo: si tu link es        */
+        /* https://youtu.be/ABC123XYZ   */
+        /* el ID es: ABC123XYZ          */
+
+       const idCancion = "yIzyS9yrgag";
+
+        const reproductor = document.createElement("iframe");
+        reproductor.src =
+            "https://www.youtube.com/embed/" +
+            idCancion +
+            "?autoplay=1&loop=1&playlist=" +
+            idCancion +
+            "&controls=0&showinfo=0";
+        reproductor.allow = "autoplay";
+        reproductor.style.cssText =
+            "position:fixed;width:0;height:0;border:none;opacity:0;pointer-events:none;";
+        document.body.appendChild(reproductor);
+        /* ---- FIN MÚSICA ---- */
 
         setTimeout(() => {
 
